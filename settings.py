@@ -1,3 +1,6 @@
 class Settings:
     def __init__(self) -> None:
-        
+        self.name: str = "Alien Invasion"
+        self.screen_w = 1200
+        self.screen_h = 800
+        self.FPS = 60
