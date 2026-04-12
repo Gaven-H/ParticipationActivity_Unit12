@@ -9,6 +9,7 @@ class AlienInvasion:
         pygame.display.set_caption("Alien Invasion")
 
         self.running = True
+        self.clock = pygame.time.Clock()
 
     def run_game(self):
         # Game Loop
