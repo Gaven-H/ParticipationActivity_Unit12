@@ -5,9 +5,12 @@ from settings import Settings
 class AlienInvasion:
     def __init__(self) -> None:
         pygame.init()
+        self.settings = Settings()
 
-        self.screen = pygame.display.set_mode((1200,800))
-        pygame.display.set_caption("Alien Invasion")
+        self.screen = pygame.display.set_mode(
+            (self.settings.screen_w,self.settings.screen_h)
+            )
+        pygame.display.set_caption(self.settings.name)
 
         self.running = True
         self.clock = pygame.time.Clock()
@@ -22,7 +25,7 @@ class AlienInvasion:
                     sys.exit()
 
             pygame.display.flip()
-            self.clock.tick(60)
+            self.clock.tick(self.settings.FPS)
 
 
 if __name__ == '__main__':
