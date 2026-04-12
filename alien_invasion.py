@@ -15,6 +15,7 @@ class AlienInvasion:
         while self.running:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
+                    self.running = False
                     pygame.quit()
                     sys.exit()
         pygame.display.flip()
