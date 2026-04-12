@@ -1,3 +1,5 @@
+import pathlib
+
 class Settings:
     def __init__(self) -> None:
         self.name: str = "Alien Invasion"
