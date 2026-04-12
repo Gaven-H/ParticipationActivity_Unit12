@@ -13,6 +13,9 @@ class AlienInvasion:
         pygame.display.set_caption(self.settings.name)
 
         self.bg = pygame.image.load(self.settings.bg_file)
+        self.bg = pygame.transform.scale(self.bg,
+                                         (self.settings.screen_w, self.settings.screen_h)
+                                         )
 
         self.running = True
         self.clock = pygame.time.Clock()
