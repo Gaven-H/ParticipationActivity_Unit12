@@ -24,4 +24,5 @@ class Bullet(Sprite):
         self.y -= self.settings.bullet_speed
         self.rect.y = self.y
 
-    def draw_bullet(self):
+    def draw_bullet(self) -> None:
+        self.screen.blit(self.image, self.rect)
