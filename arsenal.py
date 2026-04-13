@@ -18,3 +18,6 @@ class ShipArsenal:
             bullet.draw_bullet()
         
     def fire_bullet(self):
+        if len(self.arsenl) < self.settings.bullet_ammount:
+            new_bullet = Bullet(self.game)
+            self.arsenal.add(new_bullet)
