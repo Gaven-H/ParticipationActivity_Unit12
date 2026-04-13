@@ -9,3 +9,6 @@ class ShipArsenal:
         self.game = game
         self.settings = game.settings
         self.arsenal = pygame.sprite.Group()
+
+    def update_arsenal (self) -> None:
+        
