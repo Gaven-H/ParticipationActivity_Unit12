@@ -6,3 +6,5 @@ if TYPE_CHECKING:
     from alien_invasion import AlienInvasion
 
 class Bullet(Sprite):
+    def __init__(self, game: "AlienInvasion") -> None:
+        super().__init__()
