@@ -21,3 +21,4 @@ class ShipArsenal:
         if len(self.arsenl) < self.settings.bullet_ammount:
             new_bullet = Bullet(self.game)
             self.arsenal.add(new_bullet)
+            return True
