@@ -23,6 +23,7 @@ class AlienInvasion:
         self.clock = pygame.time.Clock()
 
         pygame.mixer.init()
+        self.laser_sound = pygame.mixer.Sound(self.settings.laser_sound)
 
         self.ship = Ship(self, Arsenal(self))
 
