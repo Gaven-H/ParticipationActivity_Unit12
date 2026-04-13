@@ -21,5 +21,8 @@ class Ship:
         self.moving_right = False
         self.moving_left = False
 
+    def update(self) -> None:
+        # Updating the position of the ship
+
     def draw (self) -> None:
         self.screen.blit(self.image, self.rect)
