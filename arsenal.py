@@ -14,6 +14,7 @@ class Arsenal:
 
     def update_arsenal (self) -> None:
         self.arsenal.update()
+        self._remove_bullets_offscreen()
 
     def _remove_bullets_offscreen(self) -> None:
         for bullet in self.arsenal.copy():
