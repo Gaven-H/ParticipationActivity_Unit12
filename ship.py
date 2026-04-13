@@ -1,5 +1,5 @@
 import pygame
-
+from typing import TYPE_CHECKING
 
 class Ship:
     from alien_invasion import AlienInvasion
