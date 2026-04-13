@@ -31,6 +31,8 @@ class Ship:
         
         if self.moving_left:
             self.x -= temp_speed
+        
+        self.rect.x = self.x
 
     def draw (self) -> None:
         self.screen.blit(self.image, self.rect)
