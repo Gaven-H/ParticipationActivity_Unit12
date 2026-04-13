@@ -24,7 +24,7 @@ class Ship:
 
     def update(self) -> None:
         # Updating the position of the ship
-        temp_speed = 5
+        temp_speed = self.settings.ship_speed
 
         if self.moving_right:
             self.x += temp_speed
